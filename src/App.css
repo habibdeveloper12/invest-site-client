@@ -36,3 +36,963 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* Add this CSS for styling */
+
+/* Sidebar styling */
+#sidebar-wrapper {
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.sidebar-heading {
+  font-size: 1.2rem;
+}
+
+.list-group-item {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* Page Content styling */
+#page-content-wrapper {
+  flex: 1;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #f8f9fa; /* Use your desired background color */
+}
+/* Order.css */
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-container {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.search-icon {
+  cursor: pointer;
+  /* Add any additional styles for the search icon */
+}
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 992px) {
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #sidebar-wrapper {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .dropdown {
+    margin-bottom: 10px;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css */
+
+/* Additional styling for the search container */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the search input */
+.search-input {
+  border: 1px solid #ced4da; /* Bootstrap's default border color */
+  border-radius: 5px 0 0 5px;
+  padding: 8px;
+}
+
+/* Style for the search button */
+.search-button {
+  border: 1px solid #ced4da; /* Bootstrap's default border color */
+  border-radius: 0 5px 5px 0;
+  padding: 8px 12px;
+  background-color: #007bff; /* Bootstrap's primary color */
+  color: #fff; /* White text color */
+}
+
+/* Style to add some spacing between the input and button */
+.search-container .search-input,
+.search-container .search-button {
+  margin-right: 5px;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mobileview {
+    display: block;
+    /* Other mobile styles */
+  }
+
+  .mobileviewtext {
+    margin-top: 50px;
+    /* Other mobile styles */
+  }
+
+.btnprimarym{
+    background-color: #007bff !important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .pypcm{
+    margin: 50px;
+  }
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+/* Media query for desktop screens */
+@media screen and (min-width: 768px) {
+  .disabled {
+    pointer-events: none;
+    opacity: 0.7; 
+  }
+  /* Adjust styles for desktop screens here */
+  .search-input {
+    padding: 10px;
+  }
+.pypc{
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  width: 80% !important;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+  .search-button {
+    padding: 10px 20px;
+  }
+
+  .search-container .search-input,
+  .search-container .search-button {
+    margin-right: 10px;
+  }
+  .mainpage{
+    margin-top: 90px;
+    display: flex;
+  }
+  .imgview img{
+    width: 1200px !important;
+  }
+  .footercolor{
+    background-color: #0a459e;
+    height: 370px !important;
+    width: auto;
+  }
+  .dflex{
+    display: flex;
+  }
+  .paddingpc{
+    padding-left: 90px;
+  }
+  .paddingpcbtn{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .popuppaddingpc{
+    padding-right: 30px;
+  }
+}
+
+.form-inputt {
+  width: 100%;
+  padding: 6px; /* Adjust the padding as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* LoginForm.css */
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 13px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btnprimary {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset-password {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.social-login {
+  text-align: center;
+}
+.google-login-button{
+  padding: 5px 20px;
+
+
+}
+.google-login-icon {
+  margin-right: 10px;
+
+}
+
+.signup-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border: 1px solid #888;
+  width: 100%; 
+  max-width: 500px; 
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* root color */
+.textinfo{
+  color: #025ea1;
+}
+.bglight {
+  background: linear-gradient(to bottom, #f0f3f6 10%, #f0f3f6 90%); 
+}
+
+.bglightship{
+  background: linear-gradient(to bottom, #faf8f8 10%, #f0f3f6 90%);
+}
+.bglightt {
+  background: linear-gradient(to bottom, #f0f3f6 10%, #bec8d1 90%);
+}
+
+.bglightcustomer {
+  background: linear-gradient(to bottom, #bec8d1 10%, #f0f3f6 90%);
+}
+
+.footercolor{
+  background-color: #2167cf;
+  height: auto;
+  width: auto;
+}
+
+.pointerb {
+  cursor: pointer;
+}
+.no-border {
+  border: none !important;
+  border-radius: 0; 
+}
+.iconn{
+  height: 31px;
+}
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.custom-list .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 50%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right,
+      #baf3d7,
+      #c2f5de,
+      #cbf7e4,
+      #d4f8ea,
+      #ddfaef);
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+#page-content-wrapper {
+  min-width: 100vw;
+}
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+/* Add this CSS to your styles */
+.popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* YourComponent.css */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.list-group-item {
+  color: black;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.list-group-item:hover {
+  color: #0056b3; 
+}
+
+.form-inpu {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Add some hover effect */
+.form-inpu:hover {
+  border-color: #007bff;
+}
+
+/* Add focus effect */
+.form-inpu:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Add a transition effect */
+.form-inpu {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Navbar styling */
+.navbar-area {
+  background-color: #fff; /* Change as needed */
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  max-height: 50px; /* Adjust logo size */
+}
+
+/* Right-aligned buttons */
+.navbar-nav .nav-item {
+  margin-left: 15px; /* Adjust spacing between buttons */
+}
+
+/* Style for signup/login links */
+.navbar-nav .nav-link {
+  color: #000; /* Change text color */
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Change hover color */
+}
+/* Navbar.css */
+
+.btn-signup,
+.btn-login {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-signup {
+    background-color: #ffc107; /* Yellow color */
+    color: #fff;
+}
+
+.btn-signup:hover {
+    background-color: #ffca28; /* Lighter yellow on hover */
+}
+
+.btn-login {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+}
+
+.btn-login:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.form-inputt {
+  width: 100%;
+  padding: 6px; /* Adjust the padding as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* LoginForm.css */
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 13px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btnprimary {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset-password {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.social-login {
+  text-align: center;
+}
+.google-login-button{
+  padding: 5px 20px;
+
+
+}
+.google-login-icon {
+  margin-right: 10px;
+
+}
+
+.signup-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.navcolor{
+  background-color: #222329;
+}
+.text{
+  text-align: left;
+  color: #fff;
+}
+.texta{
+  text-align: left;
+}
+
+.custom-card {
+  background-color: #ffecd8; /* Light orange background color */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Bigger shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+.custom-card:hover {
+  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.3); /* Even bigger shadow on hover */
+}
+
+
+.custom-card-title {
+  color: #333;
+  font-size: 1.5rem; /* Increased font size */
+  margin-bottom: 15px; /* Added margin */
+}
+
+.custom-card-text {
+  color: #555;
+  margin-bottom: 10px; /* Added margin */
+}
+
+
+
+/* YourComponent.css */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  width: auto;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* DepositSummary.css */
+
+.deposit-summary {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+}
+
+.deposit-summary h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.deposit-summary p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.deposit-summary strong {
+  font-weight: bold;
+  color: #222;
+}
+
+.deposit-address {
+  margin-top: 15px;
+}
+
+.deposit-address p {
+  margin-bottom: 5px;
+}
+
+.deposit-address button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deposit-address button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.ref{
+  background-color: #181717 !important;
+}
+.planc{
+  background-color: #bfc9bf;
+}
+
+.deposit-address {
+  margin-bottom: 10px;
+}
+
+.highlighted-address {
+  background-color: #766e6e;
+  padding: 4px 8px;
+  border-radius: 4px;
+  
+}
+
+.copy-address-btn {
+  margin-left: 10px;
+  padding: 4px 8px;
+  background-color: #ffc107;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-address-btn:hover {
+  background-color: #ffa000;
+}
+
+.two-factor-authentication-container {
+  display: flex;
+  flex-direction: column;
+
+ 
+  height: 100vh;
+}
+
+.install-authenticator-container,
+.enter-2fa-code-container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.fa-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.verify-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.verify-button:hover {
+  background-color: #0056b3;
+}
+
+.enable-2fa-button {
+  padding: 12px 24px;
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.enable-2fa-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+.bottom-banner {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+.bottom-banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bottom-banner-content h3 {
+  color: #333;
+}
+
+.bottom-banner-content h4 {
+  color: #555;
+  margin-top: 20px;
+}
+
+.bottom-banner-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bottom-banner-content ul li {
+  margin-bottom: 10px;
+}
+
+.bottom-banner-content p {
+  color: #666;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-section {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Add additional styling as needed */
