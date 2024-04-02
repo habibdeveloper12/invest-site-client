@@ -14,51 +14,23 @@ const ReinvestBalance = () => {
   const [depositTotalAmoun, setDepositTotalAmount] = useState([]);
 
   useEffect(() => {
-    const fetchDepositOrders = async () => {
+    const fetchUserProfile = async () => {
       try {
-        if (!user) return;
         const response = await axios.get(
-          `http://localhost:5003/api/v1/user/single-email/${user.email}/`
+          `http://localhost:5003/api/v1/user/singleByEmail/${userEmail}`
         );
-        console.log("response", response?.data);
-        setDepositOrders(response?.data);
-        // response.data.deposits.forEach((deposit) => {
-        //   console.log(deposit.depositAmount);
-        //   setAllDepositTotalAmount(deposit.depositAmount);
-        // });
-        // let sum = 0;
-        // response.data.deposits.forEach((deposit) => {
-        //   console.log(deposit.depositAmount);
-        //   // Convert depositAmount to a number before adding to sum
-        //   sum += parseFloat(deposit.depositAmount);
-        //   if (deposit.depositAmount === 50) {
-        //     console.log(deposit.depositAmount);
-        //     setDepositTotalAmount("65");
-        //     setDepositEarning("9.28");
-        //     setDepositTotalEarning("15");
-        //   } else if (deposit.depositAmount === 200) {
-        //     setDepositTotalAmount("400");
-        //     setDepositEarning("14");
-        //     setDepositTotalEarning("200");
-        //   }
-        //   if (deposit.depositAmount === 500) {
-        //     setDepositTotalAmount("1,600");
-        //     setDepositEarning("80");
-        //     setDepositTotalEarning("1,100");
-        //   } else if (deposit.depositAmount === 1000) {
-        //     setDepositTotalAmount("5,500");
-        //     setDepositEarning("183");
-        //     setDepositTotalEarning("4,500");
-        //   }
-        // }
-
-        // );
+        if (response.data.success) {
+          setDepositOrders(response.data.user);
+          console.log(response.data);
+        }
       } catch (error) {
-        console.error("Error fetching deposit orders:", error);
+        console.error("Error fetching user profile:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
-    fetchDepositOrders();
+    fetchUserProfile();
   }, [user]);
 
   return (
